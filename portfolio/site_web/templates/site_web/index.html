@@ -1,0 +1,139 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="{% static 'site_web/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur mon Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#veille">Veille</a></li>
+                <li><a href="#epreuve">Épreuve E4</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Découvre mon parcours et mes ambitions</h2>
+    <p>De collégien à apprenti, voici mon évolution.</p>
+    </section>
+
+    <section id="about">
+        <h2>À propos</h2>
+        <p>Présentation <br>
+            Bonjour, je suis <b>Leyndrick THERNO. </b><br>
+            Anciennement étudiant de 1er année au lycée Melkior Garré, je me présente à vous en tant qu’apprenant pour terminer la formation BTS SIO (Services Informatiques aux Organisations) dans 
+            <b>l’option SLAM</b> (Solutions Logicielles et Application Métier) qui est une option spécialisée pour le développement de logiciel et d’application destinés à répondre aux besoins des entreprises. 
+            Toujours en cours de formation, je vous propose sur ce portfolio de retrouver ci-dessous les différentes études et projet professionnel que j’ai pu entreprendre au sein de mon parcours.
+        </p>
+        <p>
+            <b>Qu’est ce que le BTS SIO ?</b><br>
+            Avant de suivre ma présentation, je vous propose la présentation de ma filière dont je suis affecté.
+            <b>Le Brevet de Technicien Supérieur aux Services Informatiques aux Organisations</b> (BTS SIO), 
+            s’adresse à ceux qui souhaitent se former en 2 ans aux métiers d’administrateurs réseau ou de développeur. 
+            Pour ensuite intégrer directement le marché du travail ou continuer des études, dans le domaine informatique.
+        </p>
+        <p>
+            Le BTS SIO propose 2 spécialités :
+        </p>
+        <div class="spécialités">
+            <h2>Option SISR</h2>
+            <p>
+                L’option Solution d’Infrastructure, Systèmes et Réseau forme des professionnels des réseaux et équipements informatiques (installation, maintenance, sécurité). 
+                En sortant d’un BTS SIO SISR, les étudiant seront capable de gérer et d’administrer le réseau d’une société et d’assurer sa sécurité et sa maintenance
+            </p>
+            <p>
+                Les techniciens supérieurs en informatique option SISR, peuvent accéder aux métiers de :
+                <ul>
+                    <li>Administrateur systèmes et réseaux</li>
+                    <li>Informaticien support et déploiement</li>
+                    <li>Pilote d’exploitation</li>
+                    <li>Support systèmes et réseaux</li>
+                    <li>Technicien d’infrastructure</li>
+                </ul>
+            </p>
+        </div>
+        <div>
+            <p>
+                <h2>Option SLAM</h2><br>
+                L’option Solutions Logicielles et Applications Métiers forme des spécialistes des logiciels
+                 (rédaction de cahier des charges, formulation des besoins et spécifications, développement). 
+                 Les techniciens supérieurs en informatique option SLAM, sont préparés aux métiers de :
+                	<ul>
+                        <li>Développeur d’applications informatiques</li>
+                        <li>Développeur informatique</li>
+                        <li>Analyste programmeur</li>
+                        <li>Programmeur d’applications</li>
+                        <li>Technicien d’études informatiques</li>
+                    </ul>
+                </p>
+        </div>
+    </section>
+
+    <section id="parcours">
+        <h2>Mon Parcours</h2>
+        <div class="timeline">
+            <h3>📚 Parcours Scolaire</h3>
+            <div class="event">
+                <h4>Collège</h4>
+                <p>Découverte des matières et premières passions.</p>
+            </div>
+            <div class="event">
+                <h4>Lycée</h4>
+                <p>Orientation et approfondissement des connaissances.</p>
+            </div>
+            <h3>💼 Parcours Professionnel</h3>
+            <div class="event">
+                <h4>Début de l’apprentissage</h4>
+                <p>Découverte du monde professionnel et adaptation.</p>
+            </div>
+            <div class="event">
+                <h4>Compétences acquises</h4>
+                <p>Développement des compétences techniques et personnelles.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets">
+        <h2>Mes Projets</h2>
+        <p>Découvrez mes réalisations et mes travaux significatifs.</p>
+    </section>
+
+    <section id="veille">
+        <h2>Veille Technologique</h2>
+        <p>Mes recherches et mon suivi des tendances dans mon domaine.</p>
+    </section>
+
+    <section id="epreuve">
+        <h2>Épreuve E4</h2>
+        <p>Présentation des compétences évaluées et de mes productions.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Mon Portfolio - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
